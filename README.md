@@ -45,5 +45,8 @@ npm install
 bash deploy/dev_env.sh
 ```
 
+<h3> Notes </h3>
+I used Nodejs and the express framework with sequelize as my ORM. The code syntax is very self explanatory, so I added soe comments on the just the structure of the requests
+
 
 

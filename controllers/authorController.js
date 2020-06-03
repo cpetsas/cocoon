@@ -1,5 +1,7 @@
 const models = require('../models')
 
+// example request body
+// {"name": "someone"}
 exports.addAuthor = async(request, response, next) => {
     try{
         var name = request.body.name

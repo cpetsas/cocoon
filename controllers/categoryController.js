@@ -1,5 +1,8 @@
 const models = require('../models')
 
+
+// example request body
+// {"title": "something"}
 exports.addACategory = async(request, response, next) => {
     try{
         var title = request.body.title
