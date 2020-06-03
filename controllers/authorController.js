@@ -1,0 +1,15 @@
+const models = require('../models')
+
+exports.addAuthor = async(request, response, next) => {
+    try{
+        var name = request.body.name
+        if (!name){
+            response.status(400).json('Bad request, name is missing')
+        } else {
+            author = await models.Authors.create({name: name})
+            response.status(200).json(author)
+        }
+    } catch (e) {
+        next(e)
+    }
+}
