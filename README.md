@@ -1,4 +1,4 @@
-<h1>DineApp Backend</h1>
+<h1>Cocoon test</h1>
 
 <h2>Dependencies (Instructions for Ubuntu linux)</h2>
 
@@ -12,7 +12,6 @@ sudo apt-get install postgresql
 ``` bash
 npm install
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; When installing new npm packages, the package.json file should be automatically updated, if not, then install any new packages with the --save option (eg. npm install pg --save) to add them to the dependencies section of the file.
 
 <h2>Database</h2>
 
@@ -30,7 +29,7 @@ npm install
         ``` bash
         create database cocoon;
         ```
-    * Create a new user that has access to the new DB (https://www.postgresql.org/docs/8.0/sql-createuser.html) and make sure that the dev.sh script and the development object in config/config.json has the correct variables.
+    * Create a new user that has access to the new DB (https://www.postgresql.org/docs/8.0/sql-createuser.html) and make sure that the dev_env.sh script and the development object in config/config.json has the correct variables.
     * Connect to the DB with
         ```bash
         \c cocoon
